@@ -1,0 +1,66 @@
+GET http://localhost:8000/flights/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3IiOnsiX2lkIjoiNjAwODE0NjliMGFjZmY0YWQ0NmU1OWYwIiwidXNlck5hbWUiOiJTaHJpcCIsImVtYWlsIjoiaG9mQGdtYWlsLmNvbiIsInBhc3N3b3JkIjoiTG1hbyIsImF1dGhMdmwiOjAsIl9fdiI6MH0sImlhdCI6MTYxMTE1MTg5M30.cRNskv5Jwcm9-WuLnH20eTClPJI3OU0qaJFJlF8O-zM
+
+###
+
+POST http://localhost:8000/flights
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3IiOnsiX2lkIjoiNjAwOGMzY2RhNDNkYmUwNzc4ZmJkNTg1IiwidXNlck5hbWUiOiJTaHJpcGEiLCJlbWFpbCI6ImhvZkBnbWFpbC5jb24iLCJwYXNzd29yZCI6IkxtYW8iLCJhdXRoTHZsIjowLCJfX3YiOjB9LCJpYXQiOjE2MTE0NDg0NzMsImV4cCI6MTYxMTQ0ODUxM30.ylytijVyrgAydSvnkTiS2yFtS3DeOIN3pvxOkDJXdRI
+Content-Type: application/json
+
+{
+    "name": "Malta to lmao",
+    "desc": "11:00 - 12:00",
+    "stops": "5",
+    "depLoc": "MIA",
+    "arrLoc": "BENINA",
+    "depTime": "12/01/21 9:00",
+    "edt": "12/01/21 9:00",
+    "eta": "12/01/21 12:00"
+}
+
+###
+
+DELETE http://localhost:8000/flights/6008c3eba43dbe0778fbd587
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3IiOnsiX2lkIjoiNjAwOGMzY2RhNDNkYmUwNzc4ZmJkNTg1IiwidXNlck5hbWUiOiJTaHJpcGEiLCJlbWFpbCI6ImhvZkBnbWFpbC5jb24iLCJwYXNzd29yZCI6IkxtYW8iLCJhdXRoTHZsIjowLCJfX3YiOjB9LCJpYXQiOjE2MTExODkxMTN9.lbalhynVQ6QmqbrzTtfeov2wJhmYxTSni8hAondiNqA
+###
+PATCH http://localhost:8000/flights/6008c3eba43dbe0778fbd587
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3IiOnsiX2lkIjoiNjAwOGMzY2RhNDNkYmUwNzc4ZmJkNTg1IiwidXNlck5hbWUiOiJTaHJpcGEiLCJlbWFpbCI6ImhvZkBnbWFpbC5jb24iLCJwYXNzd29yZCI6IkxtYW8iLCJhdXRoTHZsIjowLCJfX3YiOjB9LCJpYXQiOjE2MTExODg1MTV9.RAxqmmvKKSHCq4KiMjYHzyeYvyQJRwaCYlfL19owb0s
+Content-Type: application/json
+
+{
+    "name": "hello-world"
+}
+
+###
+
+POST http://localhost:8000/flights/signup
+Content-Type: application/json
+
+{
+    "userName": "DanielShaw",
+    "email": "danshawmt@hotmail.com",
+    "password": "Lmaasdao"
+}
+
+###
+
+POST http://localhost:8000/flights/login
+Content-Type: application/json
+
+{
+    "userName": "DanielShaw",
+    "password":"DanielShaaw"
+}
+
+###
+
+POST http://localhost:8000/flights/login
+Content-Type: application/json
+
+{
+    "userName": "Shrip",
+    "password": "Lmao"
+}
+###
+
+GET http://localhost:8000/flights/verify/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwMGY1YzExODVlMGQxMWE0ODQzNTg0NiIsInVzZXJOYW1lIjoiU2hsc3JrYXNkYWFhY2FhaWFwZ2E3YWFhIiwiZW1haWwiOiJkYW5zaGF3bXRAaG90bWFpbC5jb20iLCJwYXNzd29yZCI6IkxtYW8iLCJhdXRoTHZsIjowLCJhY3RpdmUiOmZhbHNlLCJfX3YiOjB9LCJpYXQiOjE2MTE2MTkzNDUsImV4cCI6MTY0MzE1NTM0NX0.DxOblt25rFE2VD3vsMBOd_ueSZEAWIWVaqbWCFury3c

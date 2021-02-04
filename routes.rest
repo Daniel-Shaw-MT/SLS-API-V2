@@ -1,0 +1,6 @@
+GET http://localhost:8000/flights/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3IiOnsiX2lkIjoiNjAwODE0NjliMGFjZmY0YWQ0NmU1OWYwIiwidXNlck5hbWUiOiJTaHJpcCIsImVtYWlsIjoiaG9mQGdtYWlsLmNvbiIsInBhc3N3b3JkIjoiTG1hbyIsImF1dGhMdmwiOjAsIl9fdiI6MH0sImlhdCI6MTYxMTE1MTg5M30.cRNskv5Jwcm9-WuLnH20eTClPJI3OU0qaJFJlF8O-zM
+
+###
+
+POST http://localhost:8000/flights/signup
